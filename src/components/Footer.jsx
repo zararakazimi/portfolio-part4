@@ -26,14 +26,6 @@ function Footer() {
 
       </div>
 
-      <p className="location">
-        📍 Kabul, Afghanistan
-      </p>
-
-      <p className="copyright">
-        © 2026 Zarara Kazimi. All Rights Reserved.
-      </p>
-
     </footer>
   );
 }

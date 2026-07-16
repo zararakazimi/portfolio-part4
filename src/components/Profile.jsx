@@ -1,9 +1,11 @@
 import profileImg from "../assets/profile.jpg";
+import { motion } from "framer-motion";
 
 function Profile({ name, title, bio }) {
   return (
     <section className="profile">
-      <div className="profile-card">
+      
+        <div className="profile-card">
 
         <img 
   src={profileImg} 

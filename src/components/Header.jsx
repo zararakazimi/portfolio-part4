@@ -1,6 +1,6 @@
 function Header({ message }) {
   return (
-    <section className="header" id="home">
+    <section className="header" id="home" >
       
       <div className="header-text">
         <h1>{message}</h1>

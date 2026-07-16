@@ -1,7 +1,39 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+
 function About() {
+  const [message, setMessage] = useState(
+    "Welcome to my portfolio!"
+  );
+
+  const changeMessage = () => {
+    const messages = [
+      "🌸 Thank you for visiting!",
+      "💻 I love building React applications.",
+      "✨ Every project teaches me something new.",
+      "💜 Let's create something amazing together!",
+      "😊 Have a wonderful day!",
+    ];
+
+    const random =
+      messages[Math.floor(Math.random() * messages.length)];
+
+    setMessage(random);
+  };
+
   return (
-    <section className="about" id="about"> 
+    <section className="about" id="about">
+      
       <div className="about-card">
+
+        <div
+          className="avatar"
+          onClick={changeMessage}
+          title="Click Me!"
+        >
+          👩‍💻
+        </div>
 
         <h2>About Me</h2>
 
@@ -12,15 +44,10 @@ function About() {
           meaningful digital experiences.
         </p>
 
-        <div className="skills">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Git & GitHub</span>
-        </div>
+        <h3>{message}</h3>
 
       </div>
+      
     </section>
   );
 }
