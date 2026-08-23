@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-
 
 function About() {
   const [message, setMessage] = useState(
@@ -24,30 +22,62 @@ function About() {
 
   return (
     <section className="about" id="about">
-      
       <div className="about-card">
 
         <div
           className="avatar"
           onClick={changeMessage}
-          title="Click Me!"
+          title="Click to see a message"
         >
-          👩‍💻
+          👩 Click Me
         </div>
 
         <h2>About Me</h2>
 
         <p>
-          I am a creative Frontend Developer who loves turning ideas
-          into beautiful and modern websites. I enjoy learning new
-          technologies and improving my skills every day to build
-          meaningful digital experiences.
+          I am a passionate Frontend Developer who enjoys creating
+          modern, responsive, and user-friendly web applications using
+          React, JavaScript, HTML, and CSS.
         </p>
+
+        <h3>🎯 Career Goal</h3>
+
+        <p>
+          My goal is to become a professional React Developer,
+          building high-quality applications that provide excellent
+          user experiences and solve real-world problems.
+        </p>
+
+        <h3>🚀 Learning Journey</h3>
+
+        <p>
+          Throughout my React learning journey, I have developed
+          projects that strengthened my skills in components,
+          state management, React Hooks, routing, forms,
+          conditional rendering, and modern UI design.
+        </p>
+
+        <h3>💡 My Philosophy</h3>
+
+        <p>
+          I believe every project is an opportunity to learn,
+          improve, and create meaningful digital experiences.
+        </p>
+
+        <h3>🛠 Technologies</h3>
+
+        <div className="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Python</span>
+          <span>Git & GitHub</span>
+        </div>
 
         <h3>{message}</h3>
 
       </div>
-      
     </section>
   );
 }

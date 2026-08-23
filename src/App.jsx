@@ -32,7 +32,7 @@ useEffect(() => {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
-
+    <main>
       <Profile
         name="Hi I'm Zarara Kazimi"
         title="Frontend Developer"
@@ -52,6 +52,9 @@ useEffect(() => {
       <FeedbackWall />
 
       <Footer />
+
+    </main>
+    
     </div>
   );
 }
